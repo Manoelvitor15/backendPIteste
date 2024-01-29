@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>Cadastro</title>
+</head>
+<body>
+
+    <div class="container">
+        <form action="cadastro" method="post">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="nome">Nome</label>
+                    <input type="text" class="form-control" id="nome" name="nome">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="cpf">CPF</label>
+                    <input type="number" class="form-control" id="cpf" name="cpf">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="identidade">Identidade</label>
+                <input type="number" class="form-control" id="identidade" name="identidade">
+            </div>
+            <div class="form-group">
+                <label for="orgao_expedidor">Orgão Expedidor</label>
+                <input type="text" class="form-control" id="orgao_expedidor" name="orgao_expedidor">
+            </div>
+            <div class="form-group">
+                <label for="sexo">Sexo</label>
+                <select class="form-control" id="sexo" name="sexo">
+                    <option selected>Escolher...</option>
+                    <option>Masculino</option>
+                    <option>Feminino</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="nome_pai">Nome do Pai</label>
+                <input type="text" class="form-control" id="nome_pai" name="nome_pai">
+            </div>
+            <div class="form-group">
+                <label for="nome_mae">Nome da Mãe</label>
+                <input type="text" class="form-control" id="nome_mae" name="nome_mae">
+            </div>
+            <div class="form-group">
+                <label for="naturalidade">Naturalidade</label>
+                <input type="text" class="form-control" id="naturalidade" name="naturalidade">
+            </div>
+            <div class="form-group">
+                <label for="uf_identidade">UF Identidade</label>
+                <select class="form-control" id="uf_identidade" name="uf_identidade">
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="pais">País</label>
+                <input type="text" class="form-control" id="pais" name="pais">
+            </div>
+            <div class="form-group">
+                <label for="logradouro">Logradouro</label>
+                <input type="text" class="form-control" id="logradouro" name="logradouro">
+            </div>
+            <div class="form-group">
+                <label for="complemento">Complemento</label>
+                <input type="text" class="form-control" id="complemento" name="complemento">
+            </div>
+            <div class="form-group">
+                <label for="bairro">Bairro</label>
+                <input type="text" class="form-control" id="bairro" name="bairro">
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="cidade">Cidade</label>
+                    <input type="text" class="form-control" id="cidade" name="cidade">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="uf_endereco">Estado</label>
+                    <select id="uf_endereco" class="form-control" name="uf_endereco">
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-2">
+                    <label for="cep">CEP</label>
+                    <input type="text" class="form-control" id="cep" name="cep">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" class="form-control" id="telefone" name="telefone">
+                </div>
+                
+                <div class="form-group col-md-6">
+                    <label for="data_nasc">Data de Nascimento</label>
+                    <input type="date" class="form-control" id="data_nasc" name="data_nasc">
+                </div>
+                
+                <div class="form-group col-md-6">
+                    <label for="estado_civil">Estado Civil</label>
+                    <select class="form-control" id="estado_civil" name="estado_civil">
+                        <option value="solteiro">Solteiro(a)</option>
+                        <option value="casado">Casado(a)</option>
+                        <option value="divorciado">Divorciado(a)</option>
+                        <option value="viuvo">Viúvo(a)</option>
+                        <option value="sep_judicialmente">Sep. Judicialmente</option>
+                        
+                    </select>
+                </div>
+                
+                <div class="form-group col-md-6">
+                    <label for="nome_conjuge">Nome do Cônjuge</label>
+                    <input type="text" class="form-control" id="nome_conjuge" name="nome_conjuge">
+                </div>
+                
+                <div class="form-group col-md-6">
+                    <label for="profissao">Profissão</label>
+                    <input type="text" class="form-control" id="profissao" name="profissao">
+                </div>
+                
+                <div class="form-group col-md-6">
+                    <label for="escolaridade">Escolaridade</label>
+                    <select class="form-control" id="escolaridade" name="escolaridade">
+                        <option value="superior">Superior</option>
+                        <option value="2º Grau">2º Grau</option>
+                        <option value="primário">Primário</option>
+                        <option value="alfabetizado">Alfabetizado</option>
+                        <option value="analfabeto">Analfabeto</option>
+                        <option value="1º Grau">1º Grau</option>
+                    </select>
+                </div>
+                
+                <div class="form-group col-md-6">
+                    <label for="data_batismo">Data de Batismo</label>
+                    <input type="date" class="form-control" id="data_batismo" name="data_batismo">
+                </div>
+                
+                <div class="form-group col-md-6">
+                    <label for="batizado_esp_santo">Batizado Espírito Santo</label>
+                    <select class="form-control" id="batizado_esp_santo" name="batizado_esp_santo">
+                        <option selected>Escolher...</option>
+                        <option>Sim</option>
+                        <option>Não</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="entrada_rol_membros">Entrada no Rol de Membros</label>
+                    <input type="date" class="form-control" id="entrada_rol_membros" name="entrada_rol_membros">
+                </div>
+                
+                <div class="form-group col-md-6">
+                    <label for="congregacao">Congregação</label>
+                    <input type="text" class="form-control" id="congregacao" name="congregacao">
+                </div>
+                
+                <div class="form-group col-md-6">
+                    <label for="funcao">Função</label>
+                    <input type="text" class="form-control" id="funcao" name="funcao">
+                </div>
+                
+                <div class="form-group col-md-6">
+                    <label for="origem">Origem</label>
+                    <input type="text" class="form-control" id="origem" name="origem">
+                </div>
+                
+                <div class="form-group col-md-6">
+                    <label for="situacao">Situação</label>
+                    <select class="form-control" id="situacao" name="situacao">
+                        <option>Ativo</option>
+                        <option>Disciplinado</option>
+                        <option>Transferido</option>
+                        <option>Falecido</option>
+                        <option>Cand. Batismo</option>
+                        <option>Desviado</option>
+                        <option>Congregado</option>
+                        <option>Desconhecido</option>
+                    </select>
+                </div>
+                
+                <div class="form-group col-md-6">
+                    <label for="igreja_cidade">Igreja na Cidade</label>
+                    <input type="text" class="form-control" id="igreja_cidade" name="igreja_cidade">
+                </div>
+                
+                <div class="form-group col-md-6">
+                    <label for="data_consagracao">Data de Consagração</label>
+                    <input type="date" class="form-control" id="data_consagracao" name="data_consagracao">
+                </div>
+                
+                <div class="form-group col-md-6">
+                    <label for="local">Local</label>
+                    <input type="text" class="form-control" id="local" name="local">
+                </div>
+                
+                <div class="form-group col-md-6">
+                    <label for="igreja_serve">Igreja que Serve</label>
+                    <input type="text" class="form-control" id="igreja_serve" name="igreja_serve">
+                </div>
+                
+                <div class="form-group col-md-6">
+                    <label for="data_reconhecimento">Data de Reconhecimento</label>
+                    <input type="date" class="form-control" id="data_reconhecimento" name="data_reconhecimento">
+                </div>
+                
+                <div class="form-group col-md-6">
+                    <label for="cargos">Cargos</label>
+                    <textarea class="form-control" id="cargos" name="cargos" rows="3"></textarea>
+                </div>
+                
+                <div class="form-group col-md-6111111">
+                    <label for="historico">Histórico</label>
+                    <textarea class="form-control" id="historico" name="historico" rows="3"></textarea>
+                </div>
+            </div>
+            <!-- Continue adding other fields as per your requirements -->
+            <button type="submit" class="btn btn-primary">Cadastrar</button>
+        </form>
+    </div>
+    
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
